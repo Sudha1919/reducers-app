@@ -4,7 +4,10 @@ import { connect } from 'react-redux';
 
 const employeeInfo =(props)=>{
 return(
-  <><p>{props.Name}</p></>
+  <><button>Decrement</button>
+    <input type='number' placeholder='number' />
+    <button>Increment</button>
+  </>
 )
 const mapStateToProps = state => {
   return state.red;
