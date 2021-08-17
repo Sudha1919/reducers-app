@@ -6,9 +6,9 @@ const EmployeeInfo = props => {
   console.log(props);
   return (
     <>
-      <button>Decrement</button>
-      <input type="text" placeholder="Incr/Decr here" />
-      <button>Increment</button>
+      <button onClick={props.decrement}>Decrement</button>
+      <input type="text" placeholder="Incr/Decr here" value={props.counter} />
+      <button onClick={props.increment}>Increment</button>
     </>
   );
 };
@@ -17,7 +17,8 @@ const mapStateToProps = state => {
 };
 const mapDispatchToProps = dispatch => {
   return {
-    increment: () => dispatch({ type: 'INC' })
+    increment: () => dispatch({ type: 'INC' }),
+    decrement: () => dispatch({ type: 'DEC' })
   };
 };
 export default connect(
