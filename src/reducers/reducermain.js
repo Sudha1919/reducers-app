@@ -3,7 +3,8 @@ function reducermain(
     Name: 'Sudha Reddy',
     Employees: [
       { Name: 'Sudha', Age: 28, Designation: 'UI Developer' },
-      { Name: 'Sandeep', Age: 32, Designation: 'DBA' }
+      { Name: 'Sandeep', Age: 32, Designation: 'Business Analyst' },
+      { Name: 'Harsha', Age: 32, Designation: 'DBA' }
     ]
   }
 ) {
